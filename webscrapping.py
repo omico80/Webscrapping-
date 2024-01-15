@@ -31,6 +31,7 @@ for link in data.find_all("a",attrs={"href":re.compile("^http")}):
     
 type(link)
 
+# The code below is to search and print and save all the letters "a" , it could have been changed to any other favourite and targetted words and terminologies.
 file = open("parsed_data.txt","w")
 for link in data.find_all("a",attrs={"href":re.compile("^http")}):
     data_link=str(link)

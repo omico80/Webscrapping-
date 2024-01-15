@@ -24,7 +24,7 @@ for link in data.find_all("a"):
     
 print(data.get_text())
 
-print(data.prettify()[0:1000])
+print(data.prettify()[0:10000])
 
 for link in data.find_all("a",attrs={"href":re.compile("^http")}):
     print(link)
